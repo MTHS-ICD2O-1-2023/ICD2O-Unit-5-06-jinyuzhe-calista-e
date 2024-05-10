@@ -11,14 +11,14 @@ let answer = 0
 
 function myButtonClicked() {
 
-  const firstinputNumber = parseInt(document.getElementById("firstinputNumber").value)
-  const secondinputNumber = parseInt(document.getElementById("secondinputNumber").value)
+  const firstNumber = parseInt(document.getElementById("firstNumber").value)
+  const secondNumber = parseInt(document.getElementById("secondNumber").value)
 
-  while (counter < secondinputNumber) {
-    answer = answer + firstinputNumber
+  while (counter < secondNumber) {
+    answer = answer + firstNumber
     counter = counter + 1
   }
 
   document.getElementById("answer").innerHTML =
-    firstinputNumber + " x " + secondinputNumber + " = " + answer
+    firstNumber + " x " + secondNumber + " = " + answer
 }
